@@ -16,6 +16,11 @@ set style line 4 lc rgb "#1f77b4" lw 2 pt 5 ps 1.2
 set style line 5 lc rgb "#9467bd" lw 2 pt 13 ps 1.2
 set style data linespoints
 
+# Baseline: single-threaded synchronized throughput
+BASELINE = 5.43564e8
+set style line 6 lc rgb "#000000" lw 2 dt 2
+set style arrow 1 nohead ls 6
+
 # --- linear scale ---
 set terminal pngcairo size 1300,900 enhanced font "DejaVu Sans,11"
 set output "plot.png"
@@ -24,7 +29,8 @@ set multiplot layout 2,1 title "Throughput vs number of threads" font ",14"
 set title "Linear scale" font ",12"
 set ylabel "Operations per second"
 unset logscale y
-plot "table.txt" using 1:2 ls 1 title "Synchronized", \
+plot BASELINE ls 6 title "Synchronous", \
+     "table.txt" using 1:2 ls 1 title "Synchronized", \
      "table.txt" using 1:3 ls 2 title "Synchronized Empty", \
      "table.txt" using 1:4 ls 3 title "Sharded", \
      "table.txt" using 1:5 ls 4 title "Thread Local", \
@@ -34,7 +40,8 @@ set title "Logarithmic scale" font ",12"
 set ylabel "Operations per second (log)"
 set logscale y
 set format y "10^{%T}"
-plot "table.txt" using 1:2 ls 1 title "Synchronized", \
+plot BASELINE ls 6 title "Synchronous", \
+     "table.txt" using 1:2 ls 1 title "Synchronized", \
      "table.txt" using 1:3 ls 2 title "Synchronized Empty", \
      "table.txt" using 1:4 ls 3 title "Sharded", \
      "table.txt" using 1:5 ls 4 title "Thread Local", \
@@ -49,7 +56,8 @@ set multiplot layout 1,1
 set title "Throughput vs number of threads (log scale)" font ",13"
 set ylabel "Operations per second (log)"
 set key inside left top
-plot "table.txt" using 1:2 ls 1 title "Synchronized", \
+plot BASELINE ls 6 title sprintf("Baseline (sync, 1 thread) = %.3e", BASELINE), \
+     "table.txt" using 1:2 ls 1 title "Synchronized", \
      "table.txt" using 1:3 ls 2 title "Synchronized Empty", \
      "table.txt" using 1:4 ls 3 title "Sharded", \
      "table.txt" using 1:5 ls 4 title "Thread Local", \

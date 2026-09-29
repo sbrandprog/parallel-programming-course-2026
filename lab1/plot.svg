@@ -80,7 +80,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M58.79,88.09 L66.48,88.09 M259.29,88.09 L976.92,88.09  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M58.79,88.09 L66.48,88.09 M405.40,88.09 L976.92,88.09  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -93,7 +93,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M79.90,647.20 L79.90,143.26 M79.90,60.76 L79.90,52.51  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M79.90,647.20 L79.90,159.76 M79.90,60.76 L79.90,52.51  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -106,7 +106,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M185.43,647.20 L185.43,143.26 M185.43,60.76 L185.43,52.51  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M185.43,647.20 L185.43,159.76 M185.43,60.76 L185.43,52.51  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -119,7 +119,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M396.49,647.20 L396.49,52.51  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M396.49,647.20 L396.49,159.76 M396.49,60.76 L396.49,52.51  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -146,76 +146,97 @@
 	<path stroke='black'  d='M58.79,52.51 L58.79,647.20 L976.92,647.20 L976.92,52.51 L58.79,52.51 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
-	<g id="gnuplot_plot_1a" ><title>Synchronized</title>
+	<g id="gnuplot_plot_1a" ><title>Baseline (sync, 1 thread) = 5.436e+08</title>
 <g fill="none" color="white" stroke="black" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(204.90,72.59)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
+	<g transform="translate(351.01,72.59)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
+		<text><tspan font-family="DejaVu Sans" >Baseline (sync, 1 thread) = 5.436e+08</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(  0,   0,   0)' stroke-dasharray=' 5,8'  d='M358.70,69.01 L397.71,69.01 M58.79,157.44 L68.06,157.44 L77.34,157.44 L86.61,157.44 L95.89,157.44 L105.16,157.44
+		L114.43,157.44 L123.71,157.44 L132.98,157.44 L142.26,157.44 L151.53,157.44 L160.80,157.44 L170.08,157.44 L179.35,157.44
+		L188.63,157.44 L197.90,157.44 L207.17,157.44 L216.45,157.44 L225.72,157.44 L235.00,157.44 L244.27,157.44 L253.54,157.44
+		L262.82,157.44 L272.09,157.44 L281.37,157.44 L290.64,157.44 L299.92,157.44 L309.19,157.44 L318.46,157.44 L327.74,157.44
+		L337.01,157.44 L346.29,157.44 L355.56,157.44 L364.83,157.44 L374.11,157.44 L383.38,157.44 L392.66,157.44 L401.93,157.44
+		L411.20,157.44 L420.48,157.44 L429.75,157.44 L439.03,157.44 L448.30,157.44 L457.57,157.44 L466.85,157.44 L476.12,157.44
+		L485.40,157.44 L494.67,157.44 L503.94,157.44 L513.22,157.44 L522.49,157.44 L531.77,157.44 L541.04,157.44 L550.31,157.44
+		L559.59,157.44 L568.86,157.44 L578.14,157.44 L587.41,157.44 L596.68,157.44 L605.96,157.44 L615.23,157.44 L624.51,157.44
+		L633.78,157.44 L643.05,157.44 L652.33,157.44 L661.60,157.44 L670.88,157.44 L680.15,157.44 L689.42,157.44 L698.70,157.44
+		L707.97,157.44 L717.25,157.44 L726.52,157.44 L735.79,157.44 L745.07,157.44 L754.34,157.44 L763.62,157.44 L772.89,157.44
+		L782.17,157.44 L791.44,157.44 L800.71,157.44 L809.99,157.44 L819.26,157.44 L828.54,157.44 L837.81,157.44 L847.08,157.44
+		L856.36,157.44 L865.63,157.44 L874.91,157.44 L884.18,157.44 L893.45,157.44 L902.73,157.44 L912.00,157.44 L921.28,157.44
+		L930.55,157.44 L939.82,157.44 L949.10,157.44 L958.37,157.44 L967.65,157.44 L976.92,157.44  '/></g>
+	</g>
+	<g id="gnuplot_plot_2a" ><title>Synchronized</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(351.01,89.09)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
 		<text><tspan font-family="DejaVu Sans" >Synchronized</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(214,  39,  40)'  d='M212.59,69.01 L251.60,69.01 M79.90,380.43 L185.43,560.27 L396.49,599.90 L818.62,647.20  '/>	<use xlink:href='#gpPt6' transform='translate(79.90,380.43) scale(4.95)' color='rgb(214,  39,  40)'/>
+	<path stroke='rgb(214,  39,  40)'  d='M358.70,85.51 L397.71,85.51 M79.90,380.43 L185.43,560.27 L396.49,599.90 L818.62,647.20  '/>	<use xlink:href='#gpPt6' transform='translate(79.90,380.43) scale(4.95)' color='rgb(214,  39,  40)'/>
 	<use xlink:href='#gpPt6' transform='translate(185.43,560.27) scale(4.95)' color='rgb(214,  39,  40)'/>
 	<use xlink:href='#gpPt6' transform='translate(396.49,599.90) scale(4.95)' color='rgb(214,  39,  40)'/>
 	<use xlink:href='#gpPt6' transform='translate(818.62,647.20) scale(4.95)' color='rgb(214,  39,  40)'/>
-	<use xlink:href='#gpPt6' transform='translate(232.09,69.01) scale(4.95)' color='rgb(214,  39,  40)'/>
+	<use xlink:href='#gpPt6' transform='translate(378.20,85.51) scale(4.95)' color='rgb(214,  39,  40)'/>
 </g>
 	</g>
-	<g id="gnuplot_plot_2a" ><title>Synchronized Empty</title>
+	<g id="gnuplot_plot_3a" ><title>Synchronized Empty</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(204.90,89.09)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
+	<g transform="translate(351.01,105.59)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
 		<text><tspan font-family="DejaVu Sans" >Synchronized Empty</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(255, 127,  14)'  d='M212.59,85.51 L251.60,85.51 M79.90,370.28 L185.43,550.33 L396.49,569.15 L818.62,598.62  '/>	<use xlink:href='#gpPt8' transform='translate(79.90,370.28) scale(4.95)' color='rgb(255, 127,  14)'/>
+	<path stroke='rgb(255, 127,  14)'  d='M358.70,102.01 L397.71,102.01 M79.90,370.28 L185.43,550.33 L396.49,569.15 L818.62,598.62  '/>	<use xlink:href='#gpPt8' transform='translate(79.90,370.28) scale(4.95)' color='rgb(255, 127,  14)'/>
 	<use xlink:href='#gpPt8' transform='translate(185.43,550.33) scale(4.95)' color='rgb(255, 127,  14)'/>
 	<use xlink:href='#gpPt8' transform='translate(396.49,569.15) scale(4.95)' color='rgb(255, 127,  14)'/>
 	<use xlink:href='#gpPt8' transform='translate(818.62,598.62) scale(4.95)' color='rgb(255, 127,  14)'/>
-	<use xlink:href='#gpPt8' transform='translate(232.09,85.51) scale(4.95)' color='rgb(255, 127,  14)'/>
+	<use xlink:href='#gpPt8' transform='translate(378.20,102.01) scale(4.95)' color='rgb(255, 127,  14)'/>
 </g>
 	</g>
-	<g id="gnuplot_plot_3a" ><title>Sharded</title>
+	<g id="gnuplot_plot_4a" ><title>Sharded</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(204.90,105.59)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
+	<g transform="translate(351.01,122.09)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
 		<text><tspan font-family="DejaVu Sans" >Sharded</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb( 44, 160,  44)'  d='M212.59,102.01 L251.60,102.01 M79.90,433.47 L185.43,581.48 L396.49,609.57 L818.62,616.63  '/>	<use xlink:href='#gpPt10' transform='translate(79.90,433.47) scale(4.95)' color='rgb( 44, 160,  44)'/>
+	<path stroke='rgb( 44, 160,  44)'  d='M358.70,118.51 L397.71,118.51 M79.90,433.47 L185.43,581.48 L396.49,609.57 L818.62,616.63  '/>	<use xlink:href='#gpPt10' transform='translate(79.90,433.47) scale(4.95)' color='rgb( 44, 160,  44)'/>
 	<use xlink:href='#gpPt10' transform='translate(185.43,581.48) scale(4.95)' color='rgb( 44, 160,  44)'/>
 	<use xlink:href='#gpPt10' transform='translate(396.49,609.57) scale(4.95)' color='rgb( 44, 160,  44)'/>
 	<use xlink:href='#gpPt10' transform='translate(818.62,616.63) scale(4.95)' color='rgb( 44, 160,  44)'/>
-	<use xlink:href='#gpPt10' transform='translate(232.09,102.01) scale(4.95)' color='rgb( 44, 160,  44)'/>
+	<use xlink:href='#gpPt10' transform='translate(378.20,118.51) scale(4.95)' color='rgb( 44, 160,  44)'/>
 </g>
 	</g>
-	<g id="gnuplot_plot_4a" ><title>Thread Local</title>
+	<g id="gnuplot_plot_5a" ><title>Thread Local</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(204.90,122.09)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
+	<g transform="translate(351.01,138.59)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
 		<text><tspan font-family="DejaVu Sans" >Thread Local</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb( 31, 119, 180)'  d='M212.59,118.51 L251.60,118.51 M79.90,187.26 L185.43,119.06 L396.49,74.70 L818.62,52.51  '/>	<use xlink:href='#gpPt4' transform='translate(79.90,187.26) scale(4.95)' color='rgb( 31, 119, 180)'/>
+	<path stroke='rgb( 31, 119, 180)'  d='M358.70,135.01 L397.71,135.01 M79.90,187.26 L185.43,119.06 L396.49,74.70 L818.62,52.51  '/>	<use xlink:href='#gpPt4' transform='translate(79.90,187.26) scale(4.95)' color='rgb( 31, 119, 180)'/>
 	<use xlink:href='#gpPt4' transform='translate(185.43,119.06) scale(4.95)' color='rgb( 31, 119, 180)'/>
 	<use xlink:href='#gpPt4' transform='translate(396.49,74.70) scale(4.95)' color='rgb( 31, 119, 180)'/>
 	<use xlink:href='#gpPt4' transform='translate(818.62,52.51) scale(4.95)' color='rgb( 31, 119, 180)'/>
-	<use xlink:href='#gpPt4' transform='translate(232.09,118.51) scale(4.95)' color='rgb( 31, 119, 180)'/>
+	<use xlink:href='#gpPt4' transform='translate(378.20,135.01) scale(4.95)' color='rgb( 31, 119, 180)'/>
 </g>
 	</g>
-	<g id="gnuplot_plot_5a" ><title>DB Thread Local</title>
+	<g id="gnuplot_plot_6a" ><title>DB Thread Local</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(204.90,138.59)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
+	<g transform="translate(351.01,155.09)" stroke="none" fill="black" font-family="DejaVu Sans" font-size="11.00"  text-anchor="end">
 		<text><tspan font-family="DejaVu Sans" >DB Thread Local</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(148, 103, 189)'  d='M212.59,135.01 L251.60,135.01 M79.90,363.80 L185.43,292.60 L396.49,227.90 L818.62,182.43  '/>	<use xlink:href='#gpPt12' transform='translate(79.90,363.80) scale(4.95)' color='rgb(148, 103, 189)'/>
+	<path stroke='rgb(148, 103, 189)'  d='M358.70,151.51 L397.71,151.51 M79.90,363.80 L185.43,292.60 L396.49,227.90 L818.62,182.43  '/>	<use xlink:href='#gpPt12' transform='translate(79.90,363.80) scale(4.95)' color='rgb(148, 103, 189)'/>
 	<use xlink:href='#gpPt12' transform='translate(185.43,292.60) scale(4.95)' color='rgb(148, 103, 189)'/>
 	<use xlink:href='#gpPt12' transform='translate(396.49,227.90) scale(4.95)' color='rgb(148, 103, 189)'/>
 	<use xlink:href='#gpPt12' transform='translate(818.62,182.43) scale(4.95)' color='rgb(148, 103, 189)'/>
-	<use xlink:href='#gpPt12' transform='translate(232.09,135.01) scale(4.95)' color='rgb(148, 103, 189)'/>
+	<use xlink:href='#gpPt12' transform='translate(378.20,151.51) scale(4.95)' color='rgb(148, 103, 189)'/>
 </g>
 	</g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">

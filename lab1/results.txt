@@ -1,0 +1,25 @@
+         Synchronous:  1: 5.43564e+08
+        Synchronized:  1: 7.65524e+07
+        Synchronized:  2: 1.57538e+07
+        Synchronized:  4: 1.11192e+07
+        Synchronized:  8: 7.33656e+06
+  Synchronized Empty:  1: 8.36926e+07
+  Synchronized Empty:  2: 1.7191e+07
+  Synchronized Empty:  4: 1.45705e+07
+  Synchronized Empty:  8: 1.12448e+07
+             Sharded:  1: 4.80241e+07
+             Sharded:  2: 1.30738e+07
+             Sharded:  4: 1.02128e+07
+             Sharded:  8: 9.59853e+06
+             Sharded:  4: sum less(0) equal(21) greater(9979); count(212248) operationsCount(212248)
+        Thread Local:  1: 4.18215e+08
+        Thread Local:  2: 7.61681e+08
+        Thread Local:  4: 1.12497e+09
+        Thread Local:  8: 1.36726e+09
+        Thread Local:  4: sum less(9975) equal(22) greater(3); count(12176910) operationsCount(12176910)
+     DB Thread Local:  1: 8.86019e+07
+     DB Thread Local:  2: 1.6567e+08
+     DB Thread Local:  4: 2.92595e+08
+     DB Thread Local:  8: 4.36365e+08
+     DB Thread Local:  4: sum less(0) equal(10000) greater(0); count(2433908) operationsCount(2433908)
+   DB-3 Thread Local:  4: sum less(233) equal(9767) greater(0); count(1967559) operationsCount(1967559)

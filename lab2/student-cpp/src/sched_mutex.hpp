@@ -7,31 +7,74 @@
 
 #include "scheduler.hpp"
 
-namespace sched {
+namespace sched
+{
 
-class sched_mutex {
+class sched_mutex
+{
 public:
     // Создаётся в setup() тестовой программы; зарегистрируйте лок в планировщике s.
-    sched_mutex(Scheduler& s, std::string name) : name(std::move(name)) { (void)s; }
-    sched_mutex(const sched_mutex&) = delete;
+    sched_mutex(Scheduler & s, std::string name)
+        : name(std::move(name))
+        , s_(s)
+        , idx_(s.add_lock(this->name))
+    {
+    }
+    sched_mutex(const sched_mutex &) = delete;
 
     // Пауза; если лок занят — ждать, не участвуя в выборе; затем стать владельцем.
-    void lock() { throw std::logic_error("TODO этап 2: sched_mutex::lock"); }
+    void lock()
+    {
+        s_.wait_for(
+            [this]
+            {
+                return s_.locks_[idx_].owner == -1;
+            },
+            "lock " + name
+        );
+        s_.locks_[idx_].owner = s_.current_id();
+    }
     // Пауза; освободить лок, ждавшие потоки снова могут быть выбраны.
-    void unlock() { throw std::logic_error("TODO этап 2: sched_mutex::unlock"); }
+    void unlock()
+    {
+        if (s_.aborted_)
+        {
+            return;
+        }
+        s_.wait_for(
+            []
+            {
+                return true;
+            },
+            "unlock " + name
+        );
+        s_.locks_[idx_].owner = -1;
+    }
 
     const std::string name;
+
+private:
+    Scheduler & s_;
+    int idx_;
 };
 
 // RAII: lock сейчас, unlock на закрывающей скобке. Выдан готовым.
-class sched_guard {
+class sched_guard
+{
 public:
-    explicit sched_guard(sched_mutex& m) : m_(m) { m_.lock(); }
-    ~sched_guard() noexcept(false) { m_.unlock(); }
-    sched_guard(const sched_guard&) = delete;
+    explicit sched_guard(sched_mutex & m)
+        : m_(m)
+    {
+        m_.lock();
+    }
+    ~sched_guard() noexcept(false)
+    {
+        m_.unlock();
+    }
+    sched_guard(const sched_guard &) = delete;
 
 private:
-    sched_mutex& m_;
+    sched_mutex & m_;
 };
 
-}  // namespace sched
+} // namespace sched

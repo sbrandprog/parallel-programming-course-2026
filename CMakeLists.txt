@@ -5,3 +5,4 @@ project(par_comp LANGUAGES CXX)
 find_package(Threads REQUIRED)
 
 add_subdirectory(lab1)
+add_subdirectory(lab2)
